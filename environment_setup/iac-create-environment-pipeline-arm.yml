@@ -12,8 +12,6 @@ stages:
     displayName: "Provision Dev resources"
     pool:
       name: 'Default'
-      demands:
-        -agent.name -equals 'leob'
     timeoutInMinutes: 0
     steps:
     - task: AzureResourceGroupDeployment@2
