@@ -11,8 +11,7 @@ stages:
   - job: "Provision_Dev"
     displayName: "Provision Dev resources"
     pool:
-      name:"Default"
-      demands:agent.name -equals "leob"
+      vmImage: 'ubuntu-latest'
     timeoutInMinutes: 0
     steps:
     - task: AzureResourceGroupDeployment@2
