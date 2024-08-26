@@ -28,7 +28,8 @@
       }
     },
     "workspace": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "[concat(toLower(parameters('workspace')), '-2024')]"
     },
     "storageAccount": {
       "type": "string",
