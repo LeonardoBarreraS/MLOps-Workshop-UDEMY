@@ -53,4 +53,4 @@ def get_model_metrics(model, data):
                 fpr, tpr))}
     print(model_metrics)
 
-    return model_metrics
+    return model_metric
